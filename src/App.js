@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       {isAuth ? <UserProfile /> : <Auth />}
-      <Counter />
+      {isAuth ? <Counter /> : ''}
     </>
   );
 }

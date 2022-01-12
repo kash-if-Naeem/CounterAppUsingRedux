@@ -12,7 +12,7 @@ const Counter = () => {
     dispatch(counterActions.increment())
   }
 
-  const increaseHandler =() => {
+  const increaseHandler = () => {
     dispatch(counterActions.increase(10))
   }
 
@@ -26,6 +26,7 @@ const Counter = () => {
   };
 
   return (
+    
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
       {show && <div className={classes.value}>{counter}</div>}
@@ -35,7 +36,11 @@ const Counter = () => {
         <button onClick={decrementHandler}>Decrement</button>
       </div>
       <button onClick={toggleCounterHandler}>Toggle Counter</button>
+      
     </main>
+
+
+
   );
 };
 
